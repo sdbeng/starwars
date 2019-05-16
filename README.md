@@ -1,7 +1,8 @@
 # starwars
 Fun node.js app. Pull, add and remove(p) star wars characters.
 
-## npm i
+## Install
+npm i
 
 ## todo
 remove char.
