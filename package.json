@@ -1,7 +1,7 @@
 {
-  "name": "starwars-express",
+  "name": "starwars",
   "version": "1.0.0",
-  "description": "",
+  "description": "star wars node app",
   "main": "server.js",
   "dependencies": {
     "express": "^4.16.3"
@@ -15,6 +15,6 @@
     "start": "node server.js",
     "watch": "nodemon server.js"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "serg",
+  "license": "MIT"
 }
