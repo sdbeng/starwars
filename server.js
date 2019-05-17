@@ -7,8 +7,6 @@ var path = require("path");
 // =============================================================
 var app = express();
 var PORT = process.env.PORT || 3000;
-console.log('process.env.PORT',process.env.PORT);
-
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
@@ -63,6 +61,8 @@ app.get("/api/characters", function(req, res) {
 
 // Displays a single character, or returns false
 app.get("/api/characters/:character", function(req, res) {
+  console.log('LOG route params', req.params);
+  
   var chosen = req.params.character;
 
   console.log(chosen);
@@ -93,6 +93,7 @@ app.post("/api/characters", function(req, res) {
   res.json(newcharacter);
 });
 
+console.log('process.env.PORT',process.env.PORT);
 // Starts the server to begin listening
 // =============================================================
 app.listen(PORT, function() {
